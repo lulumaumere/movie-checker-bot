@@ -49,7 +49,7 @@ const getMovieTMDbLink = getFormattedProp('', 'id', id => `https://www.themovied
 
 const getMovieIMDbLink = getFormattedProp('', 'IMDbId', id => `http://www.imdb.com/title/${id}`);
 
-const getMovieLetterboxdLink = getFormattedProp('', 'IMDbId', id => `http://letterboxd.com/imdb/${id}`);
+const getMovieLetterboxdLink = getFormattedProp('', 'title', identity => `https://iflx.xyz/search?query=${id}`);
 
 export const getMovieId = ({ id }) => id;
 
